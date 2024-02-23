@@ -15,4 +15,8 @@
 		<Folder Include="Controllers\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Buscador.Application\Buscador.Application.csproj" />
+	</ItemGroup>
+
 </Project>
