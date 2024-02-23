@@ -20,6 +20,11 @@ namespace Buscador.Controllers
 		{
 			var response = await SiteService.SearchPagenedSites(pagenedSiteSearchDto);
 
+			if (!response.Any())
+			{
+				return NoContent();
+			}
+
 			return Ok(response);
 		}
 	}
