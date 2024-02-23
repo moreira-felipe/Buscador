@@ -1,6 +1,7 @@
 using Buscador.Application.Services;
 using Buscador.Application.Services.Interfaces;
 using Buscador.Configurations;
+using Buscador.Domain.AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,9 @@ builder.Configuration
 	.SetBasePath(builder.Environment.ContentRootPath)
 	.AddJsonFile("appsettings.json", true, true)
 	.AddEnvironmentVariables();
-
+builder.Services.AddAutoMapper(typeof(AutoMapperConfiguration));
 builder.Services.AddElasticSearch(builder.Configuration);
+
 builder.Services.AddScoped<ISiteService, SiteService>();
 builder.Services.AddSingleton(builder.Configuration);
 
