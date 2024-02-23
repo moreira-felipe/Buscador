@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Buscador.Domain.Dtos.Responses;
+using Buscador.Domain.Entities;
 
 namespace Buscador.Domain.AutoMapper
 {
@@ -11,7 +8,7 @@ namespace Buscador.Domain.AutoMapper
 	{
 		public AutoMapperConfiguration()
 		{
-			//EMPTY METHOD
+			CreateMap<Site, SiteResponseDto>();
 		}
 	}
 }
