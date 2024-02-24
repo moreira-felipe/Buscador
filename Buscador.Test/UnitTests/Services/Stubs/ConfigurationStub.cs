@@ -5,7 +5,7 @@ namespace Buscador.Test.UnitTests.Services.Stubs
 {
 	public class ConfigurationStub : IConfiguration
 	{
-		public string? this[string key] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public string? this[string key] { get => "Site"; set => throw new NotImplementedException(); }
 
 		public IEnumerable<IConfigurationSection> GetChildren()
 		{
@@ -21,5 +21,6 @@ namespace Buscador.Test.UnitTests.Services.Stubs
 		{
 			throw new NotImplementedException();
 		}
+
 	}
 }

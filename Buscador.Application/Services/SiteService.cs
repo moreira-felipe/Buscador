@@ -54,7 +54,7 @@ namespace Buscador.Application.Services
 				return Enumerable.Empty<SiteResponseDto>();
 			}
 
-			var response = Mapper.Map<IEnumerable<SiteResponseDto>>(result.Documents);
+			var response = Mapper.Map<List<SiteResponseDto>>(result.Documents);
 
 			return response;
 		}
