@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buscador.Domain", "Buscador
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buscador.Application", "Buscador.Application\Buscador.Application.csproj", "{6DAF4FA3-435F-459E-923A-837336F95ADE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buscador.Test", "Buscador.Test\Buscador.Test.csproj", "{D5B136A9-BEB0-4340-A9E3-486361AFDC48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6DAF4FA3-435F-459E-923A-837336F95ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DAF4FA3-435F-459E-923A-837336F95ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DAF4FA3-435F-459E-923A-837336F95ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B136A9-BEB0-4340-A9E3-486361AFDC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B136A9-BEB0-4340-A9E3-486361AFDC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B136A9-BEB0-4340-A9E3-486361AFDC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B136A9-BEB0-4340-A9E3-486361AFDC48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
